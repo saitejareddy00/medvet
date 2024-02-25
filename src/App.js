@@ -11,7 +11,7 @@ function App() {
       name: "home",
       path: "/",
       showInSideNav: false,
-      element: <HomePage />,
+      element: <Products />,
     },
     {
       id: "1",
