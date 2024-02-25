@@ -1,7 +1,6 @@
 import "./App.css";
 import { Box } from "@mui/material";
 import { useRoutes } from "react-router-dom";
-import { HomePage } from "./pages/mindGame/HomePage";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Products } from "./pages/mindGame/Products";
 function App() {
