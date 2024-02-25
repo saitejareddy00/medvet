@@ -1,30 +1,25 @@
-import { Link, Stack } from "@mui/material";
+import { AppBar, Stack, Typography } from "@mui/material";
 import { useNavigate } from "react-router";
+import { CustomLink } from "../../components/CustomLink";
+import { NavBar } from "../../components/NavBar/NavBar";
 
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <Stack
-      alignItems="center"
-      justifyContent="center"
-      width="100%"
-      height="100%"
-    >
-      <Stack>
-        <Link
-          onClick={() => navigate("mindgame")}
-          sx={{ fontSize: "100px", textDecoration: "none", color: "white" }}
-        >
-          Game
-        </Link>
-        <Link
-          onClick={() => navigate("date")}
-          sx={{ fontSize: "100px", textDecoration: "none", color: "white" }}
-        >
-          Date
-        </Link>
-      </Stack>
-    </Stack>
+    // <AppBar
+    //   position="fixed"
+    //   sx={{  backgroundColor: "transparent" }}
+    // >
+    //   <Stack direction='row' justifyContent='space-between' alignItems='center'>
+    //   <Stack><Typography variant="h2" sx={{color:'CaptionText',p:1}}>Medvet</Typography></Stack>
+    //   <Stack direction="row" gap='20px' px={2}>
+    //     <CustomLink>Products</CustomLink>
+    //     <CustomLink>Compositions</CustomLink>
+    //     <CustomLink>Uses</CustomLink>
+    //   </Stack>
+    //   </Stack>
+    // </AppBar>
+    <p>homepage</p>
   );
 };
 
