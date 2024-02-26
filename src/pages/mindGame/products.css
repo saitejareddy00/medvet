@@ -11,7 +11,7 @@
         scale(1);
       filter: blur(0);
       opacity: 1;
-      z-index:1000;
+      z-index:9;
     }
   }
   
@@ -47,9 +47,6 @@
       }
   
   .flex-item {
-      height: 40%;
-      min-width: 300px;
-      min-height: 300px;
       -webkit-order: 0;
       -ms-flex-order: 0;
       order: 0;
@@ -64,7 +61,7 @@
   .glassmorph {
       color: #ecf0f1;
       border-radius: 8px;
-      padding: 20px;
+      padding: 10px;
       background: rgba( 255, 255, 255, 0.5 );
       border: solid 1px rgba(255,255,255,0.6);
       backdrop-filter: blur(20px);

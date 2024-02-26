@@ -30,7 +30,7 @@ export const Products = () => {
           }}
         >{
             images.map(imag=><div class="flex-item glassmorph transform3D">
-            <img src={imag} height='100%' alt="sa" />
+            <img src={imag} width='100%' alt="sa" />
           </div>)
         }
           

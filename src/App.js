@@ -24,7 +24,7 @@ function App() {
   const Content = useRoutes(routes);
 
   return (
-    <Box sx={{ width: { md: "100vw" } }}>
+    <Box >
       <NavBar />
       <Box sx={{ mt: 8,height:'100vh',width:'100vw' }}>{Content}</Box>
     </Box>
