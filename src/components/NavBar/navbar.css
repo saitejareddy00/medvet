@@ -30,12 +30,14 @@
     line-height: 60px;
     width: 100%;
     z-index: 10;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
   }
   
   .nav-wrapper {
-    margin: auto;
+    margin-left: 120px;
     text-align: center;
-    width: 70%;
+    width: 80%;
   } @media(max-width: 768px) {
       .nav-wrapper {
         width: 100%;
@@ -43,18 +45,20 @@
     } @media(max-width: 638px) {
         .nav-wrapper {
           width: 100%;
+          margin-left: 20px;
         }
       } 
   
   
   .logo {
     float: left;
-    margin-left: 28px;
+    margin-left: 0px;
     font-size: 1.5em;
     height: 60px;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding-top: 12px;
+    cursor: pointer;
   } @media(max-width: 768px) {
       .logo {
   /*       margin-left: 5px; */
@@ -85,7 +89,7 @@
   }
   
   #navbar li a {
-    color: rgb(13, 26, 38);
+    color: rgb(207, 221, 235);
     display: block;
     font-size: 0.7em;
     height: 50px;
@@ -101,7 +105,7 @@
   
   #navbar li a:hover {
     /* border-bottom: 1px solid rgb(28, 121, 184); */
-    color: rgb(28, 121, 184);
+    color: rgb(116 122 168 / 77%);
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
   }
@@ -128,7 +132,7 @@
   }
   
   #navbar li a:hover:before {
-    background: rgb(13, 26, 38);
+    background: rgb(116 122 168 / 77%);
     width: 100%;
     transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
   }
@@ -153,7 +157,7 @@
       top: 20px;
       height: 23px;
       width: 27px;
-      z-index: 12;
+      z-index: 1000000000;
     }
   
     /* Icon Bars */
@@ -280,8 +284,8 @@
   /*======================================================
                      Responsive Mobile Menu 
     ======================================================*/
-  .overlay-menu {
-    background: lightblue;
+  .overlay-menu {background: rgb(137 182 195 / 68%);
+    backdrop-filter: blur(4px);
     color: rgb(13, 26, 38);
     display: flex;
     align-items: center;
@@ -294,6 +298,7 @@
     height: 100vh;
     -webkit-transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
+    z-index: 1000000;
   }
   
   .overlay-menu ul, .overlay-menu li {
@@ -320,4 +325,8 @@
     color: rgb(28, 121, 184);
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
+  }
+
+  .logoIMG{
+    filter:brightness(2)
   }

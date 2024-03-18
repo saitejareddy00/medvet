@@ -24,8 +24,6 @@
   
   
   .flex-container {
-      background: rgb(238,189,174);
-      background: linear-gradient(90deg, #454547 0%, #F26E22 100%);
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
@@ -66,3 +64,5 @@
       border: solid 1px rgba(255,255,255,0.6);
       backdrop-filter: blur(20px);
   }
+
+  
