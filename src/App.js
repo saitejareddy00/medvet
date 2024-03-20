@@ -5,6 +5,8 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { Products } from "./pages/mindGame/Products";
 import medvetBg from "./assets/medvetBg.png";
 import { HomePage } from "./pages/mindGame/HomePage";
+import { Compositions } from "./pages/mindGame/Compositions";
+
 function App() {
   const routes = [
     {
@@ -12,14 +14,53 @@ function App() {
       name: "home",
       path: "/",
       showInSideNav: false,
-      element: <HomePage />,
+      element: (
+        <Box
+          sx={{
+            width: "100%",
+            zIndex: 20,
+            backgroundColor: "rgba(0,0,0,0.7)",
+          }}
+        >
+          <HomePage />
+        </Box>
+      ),
     },
     {
       id: "1",
       name: "products",
       path: "/products",
       showInSideNav: false,
-      element: <Products />,
+      element: (
+        <Box
+          sx={{
+            width: "100%",
+            zIndex: 20,
+            backdropFilter: "blur(2px)",
+            backgroundColor: "rgba(0,0,0,0.4)",
+          }}
+        >
+          <Products />
+        </Box>
+      ),
+    },
+    {
+      id: "3",
+      name: "products",
+      path: "/compositions/:id",
+      showInSideNav: false,
+      element: (
+        <Box
+          sx={{
+            width: "100%",
+            zIndex: 20,
+            backdropFilter: "blur(2px)",
+            backgroundColor: "rgba(0,0,0,0.4)",
+          }}
+        >
+          <Compositions />
+        </Box>
+      ),
     },
   ];
 
@@ -38,15 +79,8 @@ function App() {
             zIndex: -1000,
           }}
         ></Box>
-        <Box
-          sx={{
-            width: "100%",
-            zIndex: 20,
-            backgroundColor: "rgba(0,0,0,0.7)",
-          }}
-        >
-          {Content}
-        </Box>
+
+        {Content}
       </Box>
     </Box>
   );
